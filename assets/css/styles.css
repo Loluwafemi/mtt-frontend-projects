@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+  /*background-color: rgba(255,0,0,0.3);*/
+}
+
+
+::selection {
+  color: white;
+  background-color: #ff1616;
+}
+
+
+@media only screen and (min-width: 992px) {
+  .section-1 {
+    /*height: 50vh;*/
+    background-color: var(--bs-gray-100);
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 5px;
+  }
+}
+
+@media only screen and (max-width: 772px) {
+  .section-1 {
+    /*height: 50vh;*/
+    background-color: var(--bs-gray-200);
+    display: grid;
+    grid-template-columns: auto;
+    padding: 5px;
+    margin-bottom: 40px;
+  }
+}
+
+.section-2 {
+  height: 25vh;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: var(--bs-gray-600);
+  margin: 50px;
+  border-radius: 30px;
+  color: white;
+}
+
+@media only screen and (max-width: 772px) {
+  .section-2 {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto;
+    background-color: var(--bs-gray-600);
+    margin: 50px;
+    border-radius: 30px;
+    color: white;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .section-3 {
+    /*height: 100vh;*/
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 5px;
+    margin: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+.section-3 > div {
+  background-color: var(--bs-gray);
+  height: 25vh;
+}
+
+@media only screen and (max-width: 772px) {
+  .section-3 {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5px;
+    margin: 10px;
+  }
+}
+
+@media (min-width: 576px) {
+  .section-1-child-one {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .section-1-child-one {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    width: 60%;
+  }
+}
+
+.section-1-child-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.section-1-child-two > header > h1:nth-child(1):hover {
+  scale: 1.5;
+  color: green;
+}
+
+.section-1-child-two > header > h1:nth-child(2):hover {
+  scale: 1.5;
+  color: red;
+}
+
+.section-1-child-two > header > h1:nth-child(3):hover {
+  scale: 1.5;
+  color: yellow;
+}
+
+.section-1-child-two > header > h1:nth-child(4):hover {
+  scale: 1.5;
+  color: gray;
+}
+
+.mtt-records {
+  width: inherit;
+  display: flex;
+  flex-direction: row;
+}
+
+.mtt-records > header {
+  text-align: center;
+  margin-left: 19px;
+  font-weight: bolder;
+  color: gray;
+  font-size: 20px;
+}
+
+.activities {
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: small;
+  padding: 25px;
+  text-align: center;
+}
+
+.activities:hover {
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: small;
+  padding: 10px;
+  text-align: center;
+  background-color: var(--bs-success);
+  border-radius: 30px;
+  transform: scale(1.1);
+  border: solid 1px var(--bs-gray);
+}
+
+.about {
+  /*height: 50vh;*/
+  background-color: var(--bs-gray);
+  margin: 30px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.section-3 > .project, a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+  color: gainsboro;
+}
