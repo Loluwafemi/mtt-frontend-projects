@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>3MTT PROJECTS</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/todo.css">
+</head>
+
+<body>
+    <header class="p-4 border m-2">
+        <h1>To-Do APP</h1><span>3MTT - 720 iNNOVATION PROJECT 2</span>
+    </header>
+    <section class="p-4 border m-2 c-grid">
+        <div class="preview">
+            <div>
+                <header class="p-2 lh-1 border text-muted ms-2 mt-2 border-end-0 shadow">
+                    <h4>Preview</h4><span>Your To-Do</span>
+                </header>
+                <div class="m-3 border p-2 mt-0 me-0 rounded"><span class="date"></span>
+                    <p class="output">Select from your list</p>
+                </div>
+            </div>
+            <div style="height: 30vh;">
+                <header class="p-2 lh-1 text-muted border ms-2 mt-2 border-end-0 shadow">
+                    <h4>Input</h4><span>Your To-Do Content</span>
+                </header>
+                <div class="m-3 border p-2 mt-0 me-0 rounded ms-2" style="background: var(--bs-body-color);color: var(--bs-gray-300);">
+                    <form class="todoForm" name="todoForm">
+                        <div class="input-group"><textarea class="form-control border-0 bg-transparent text-white todoInput" name="todoText" value=""></textarea><button class="btn btn-light ms-1 todoSubmit" type="button"><i class="far fa-paper-plane"></i></button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="inputs">
+            <header class="p-2 lh-1 text-muted border ms-2 mt-2 border-end-0 shadow">
+                <h4>Your To-Do List</h4><span>Your saved To-do List</span>
+            </header>
+            <div class="m-3 p-2 mt-0 me-0 border border-bottom-0" style="max-width: 545.8px;">
+                <div class="btn-group" role="group"><button class="btn btn-danger me-2 deleteMultiple" type="button">Delete Selected<i class="far fa-trash-alt mx-2"></i><span class="badge bg-dark countSelected">0</span></button></div>
+                <div class="list-group todoList"><button class="list-group-item list-group-item-action"><span>Nothing added yet</span></button></div>
+            </div>
+        </div>
+    </section>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/todoApp.js"></script>
+</body>
+
+</html>

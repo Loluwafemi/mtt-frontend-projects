@@ -3,13 +3,6 @@
   /*background-color: rgba(255,0,0,0.3);*/
 }
 
-
-::selection {
-  color: white;
-  background-color: #ff1616;
-}
-
-
 @media only screen and (min-width: 992px) {
   .section-1 {
     /*height: 50vh;*/
@@ -182,3 +175,9 @@
   text-decoration: none;
   color: gainsboro;
 }
+
+.date {
+  font-weight: bold;
+  color: var(--bs-blue);
+}
+

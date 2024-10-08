@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  /*background-color: rgba(102,51,153,0.26);*/
+  /*border: solid;*/
+}
+
+@media only screen and (min-width: 992px) {
+  .c-grid {
+    display: grid;
+    grid-template-areas: "preview input";
+    gap: 4px;
+    grid-template-columns: auto;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .preview {
+    /*grid-area: preview;*/
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 4px;
+    /*width: 100%;*/
+  }
+}
+
+.inputs {
+  /*grid-area: input;*/
+  display: inline;
+}
+
+.list-group > button {
+  margin-top: 20px;
+}
+
+.list-group > button:hover {
+  background-color: var(--bs-gray-500);
+  color: white;
+}
+
+.list-group > button:focus {
+  background-color: var(--bs-gray-600);
+  color: white;
+}
+
+.list-group > button > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list-group > button > div > div:nth-child(1) {
+  width: calc(100% - 37px);
+  display: inline;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: start;
+}
+
+.list-group > button > div > div {
+  background-color: inherit;
+  border: none;
+}
+
+.list-group > button > div > div:nth-child(2) {
+  color: var(--bs-danger);
+}
+
+.list-group > button > div > div > span {
+  margin-left: 8px;
+}
+
+.list-group > button > div > span {
+  background-color: white;
+  display: block;
+  border: none;
+}
+
